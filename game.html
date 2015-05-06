@@ -1,0 +1,47 @@
+<html>
+<head>
+	<link rel="stylesheet" href="/css/bootstrap.min.css" type="text/css">
+	<style>
+	canvas { 
+		margin: 30px;
+	}
+
+	.player-one {
+		color: #00ffff;
+	}
+	.player-two {
+		color: #ff00ff;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+				<div>
+				<canvas id="myCanvas" width="410" height="410" />
+				</div>
+			
+			<div id="winner-container">
+				<div class="col-md-3">
+					<h4>Dot and Box!</h4>
+					<p>Click on a gray line to fill it in.</p>
+				</div>
+				<div class="col-md-3">
+					<div id="player-info">
+						<p>Player <span class="player-one" id="player-id">One</span>, your turn!</p>
+						<p class="player-one">Player One Score: <span id="player-one-score">0</span></p>
+						<p class="player-two">Player Two Score: <span id="player-two-score">0</span></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/dotandbox.js"></script>
+    <script src="/js/dotandboxsetup.js"></script>
+</body>
+</html>
